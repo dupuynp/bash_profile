@@ -25,18 +25,8 @@ export LSCOLORS=DxGxcxdxCxegedabagacad
  
 alias ll='ls -l'
 alias la='ls -la'
-
-alias qt='ssh root@quicktransmit.com'
-alias npd='ssh root@104.236.57.7'
-alias dev='ssh root@104.131.101.67'
-alias grid='ssh o4951353214.ftp@o4951353214.v252n.us.host8.biz'
-
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
-alias platform-up='VBoxHeadless --startvm FM63'
-alias platform-in='ssh -p 2222 fmpub@FM63'
-alias ds='ssh ndupuy@devsupport.chi.fmpub.net'
- 
 ########
 ## git
  
@@ -58,23 +48,9 @@ alias gdm='git diff master'
 alias gl='git pull'
 alias gp='git push'
  
- #############################################
-# RVM - for managing versions of ruby
 #############################################
- 
-[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
- 
- #############################################
 # update path for mysql and pear
 #############################################
 
-export PATH=~/.rbenv/shims:/usr/local/mysql/bin:/usr/local/bin/ruby:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Applications/android/platform-tools/:/Applications/android/tools/
+export PATH=/usr/local/mysql/bin:/usr/local/bin/ruby:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:
 export PATH="$(brew --prefix homebrew/php/php54)/bin:$PATH"
-
-#############################################
-# RVM - for managing versions of ruby
-#############################################
-
-#export PATH=/Applications/MAMP/bin/php/php5.4.10/bin:$PATH
-#export PATH=/Applications/MAMP/Library/bin/:$PATH
-
